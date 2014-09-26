@@ -1,0 +1,27 @@
+#%RAML 0.8
+---
+title: demo
+version: v1
+
+schemas:
+  - emptyResponse: |
+      {   "$schema": "http://json-schema.org/draft-03/schema",
+          "type": "object",
+          "description": "to work around the creation of a void method",
+          "properties": {
+          }
+      }
+
+/foo:
+  /bar:
+    post:
+      responses:
+        200:
+          description: no body needed here
+          body:
+            application/json:
+              schema: emptyResponse
+        400:
+          description: no body needed here
+        500:
+          description: no body needed here
