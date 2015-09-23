@@ -1,5 +1,7 @@
 # RAML for jax rs void method bug?
 
+This is a project that helps reproducing a bug in the raml to jax-rs project, see: [https://github.com/mulesoft/raml-for-jax-rs/issues/17](https://github.com/mulesoft/raml-for-jax-rs/issues/17)
+
 The jax rs generator creates void methods for resources with no body defined, for (at least) the following status codes:
 
 - 204
